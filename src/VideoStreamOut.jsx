@@ -7,7 +7,7 @@ class VideoStreamOut extends Component {
     this.webRTC = new SimpleWebRTC({
       media: {
         video: true,
-        audio: false,
+        audio: true,
       },
       // the id/element dom element that will hold "our" video
       localVideoEl: 'local',
