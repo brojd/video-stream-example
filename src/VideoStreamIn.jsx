@@ -24,10 +24,10 @@ class VideoStreamIn extends Component {
       this.webRTC.joinRoom('your awesome room name');
     });
     this.webRTC.on('videoAdded', videoEl => {
+      videoEl.playsInline = true;
       videoEl.autoplay = true;
       videoEl.muted = true;
       videoEl.controls = true;
-      videoEl.playsInline = true;
     });
   }
   render() {
