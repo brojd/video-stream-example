@@ -27,6 +27,7 @@ class VideoStreamIn extends Component {
       videoEl.autoplay = true;
       videoEl.muted = true;
       videoEl.controls = true;
+      videoEl.playsInline = true;
     });
   }
   render() {
